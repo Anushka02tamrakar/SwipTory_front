@@ -1,0 +1,36 @@
+.storiesContainer {
+    margin: 1rem;
+}
+
+.heading {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.bookmarks {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    place-items: center;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 500px) {
+    .heading {
+        font-size: 1.5rem;
+    }
+
+    .bookmarks {
+        display: grid;
+        grid-template-columns: 1fr;
+        place-items: center;
+        justify-content: center;
+    }
+
+    .no_bookmarks {
+        position: static;
+    }
+
+    .no_bookmark_heading {
+        margin-bottom: 0.3rem;
+    }
+}
